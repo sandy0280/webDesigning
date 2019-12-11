@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Login and Registration Form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+		<div class="Hero">
+			<div class="form-box">
+				<div class="button-box">
+					<div id="btn"></div>
+					<button type="button" class="toggle-btn" onclick="login()">Login</button>
+					<button type="button" class="toggle-btn" onclick="register()">Register</button>
+				</div>
+					<div class="social-icons">
+						<a href="https://www.facebook.com/kumar.shanu.940098" target="_blank"><img src="fb.png"></a>
+						<a href="https://www.instagram.com/er.kumarshanu/" target="_blank"><img src="insta.png"></a>
+						<a href="https://api.whatsapp.com/send?phone=8539082232&text=If%20you%20have%20any%20query%20chat%20with%20me." target="_blank"><img src="whatsapp.png"></a>
+						
+					</div>
+						<!-- Login -->
+						<form id="login" class="input_group">
+							<input type="text" class="input-field" placeholder="User Id" required>
+							<input type="Password" class="input-field" placeholder="Enter Password" required>
+							<input type="checkbox" class="checkbox"><span>Remember Password</span>
+							<button type="Submit" class="submit-btn">Login</button>
+						</form>
+						<!-- Register -->
+						<form id="register" class="input_group">
+							<input type="text" class="input-field" placeholder="First name" required>
+							<input type="text" pattern="[789][0-9]{9}" class="input-field" placeholder="Mobile No." 
+							title="Phone number with 7-9 and remaing 9 digit with 0-9" required>
+							<input type="email" class="input-field" placeholder="Email Id" required>
+							<input type="Password" class="input-field" placeholder="Enter Password" required>
+							<input type="checkbox" class="checkbox"><span>I agree to the terms & Conditions</span>
+							<button type="Submit" class="submit-btn">Register</button>
+						</form>
+			</div>
+
+		</div>
+		<script>
+			
+			var x = document.getElementById("login")
+			var y = document.getElementById("register")
+			var z = document.getElementById("btn")
+
+			function register(){
+				x.style.left = "-400px";
+				y.style.left = "50px";
+				z.style.left = "110px";
+			}
+
+			function login(){
+				x.style.left = "50px";
+				y.style.left = "450px";
+				z.style.left = "0";
+
+			}
+		</script>
+</body>
+</html>
